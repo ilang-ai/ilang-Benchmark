@@ -1,0 +1,31 @@
+SERVICE AGREEMENT
+
+This Service Agreement ("Agreement") is entered into as of 2025-01-15 ("Effective Date") by and between:
+
+PARTY A: TechCorp Solutions Inc., a Delaware corporation with principal offices at 123 Innovation Drive, San Francisco, CA 94105 ("Provider")
+
+PARTY B: Global Enterprises LLC, a California limited liability company with principal offices at 456 Business Plaza, Los Angeles, CA 90012 ("Client")
+
+1. TERM
+This Agreement shall commence on 2025-02-01 and continue until 2026-01-31, unless earlier terminated as provided herein ("Term").
+
+2. SERVICES
+Provider agrees to provide software development and consulting services as detailed in Exhibit A, including but not limited to: system architecture design, code development, testing, and deployment support.
+
+3. COMPENSATION
+Client shall pay Provider a monthly fee of $50,000, payable within 30 days of invoice receipt. Additional services beyond the scope defined in Exhibit A shall be billed at $200 per hour.
+
+4. TERMINATION
+Either party may terminate this Agreement with 60 days written notice. In the event of material breach, the non-breaching party may terminate immediately upon written notice if the breach is not cured within 30 days.
+
+5. TERMINATION CLAUSE
+Upon termination, Provider shall deliver all work product completed to date, and Client shall pay for all services rendered through the termination date. Any prepaid fees for services not yet rendered shall be refunded on a pro-rata basis within 30 days of termination.
+
+6. CONFIDENTIALITY
+Both parties agree to maintain confidentiality of proprietary information disclosed during the Term and for 3 years thereafter.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+TechCorp Solutions Inc.          Global Enterprises LLC
+By: Sarah Johnson, CEO           By: Michael Chen, COO
+Date: 2025-01-15                 Date: 2025-01-15

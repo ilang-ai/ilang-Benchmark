@@ -1,0 +1,21 @@
+{
+  "total_tests": 60,
+  "models": [
+    "mock-model-1"
+  ],
+  "categories": [
+    "text_summary",
+    "table_transform",
+    "code_generation",
+    "data_extraction",
+    "multi_turn",
+    "complex_pipeline"
+  ],
+  "avg_latency_baseline": 0.10012697378794352,
+  "avg_latency_ilang": 0.10012249151865642,
+  "avg_tokens_baseline": 40.46666666666667,
+  "avg_tokens_ilang": 11.833333333333334,
+  "token_savings_pct": 70.75782537067545,
+  "parse_errors": 0,
+  "timestamp": "2026-05-08T22:22:41.939639"
+}
