@@ -2,6 +2,10 @@
 
 Comprehensive testing framework for evaluating I-Lang prompt compression against baseline natural language prompts.
 
+## Sub-benchmarks
+
+- **[judgment/](judgment/)** — I-Lang v5.0 judgment-layer learnability. Tests whether the PATCH-1 reference mapping f_v5 (11-dim vector to decision mode) is a learnable decision surface. Result: a plain GBDT recovers it at 0.965 vs 0.353 baseline, official JCS 0.986, L2 PASS. Isolates the judgment layer from the extraction layer by design.
+
 ## Overview
 
 This benchmark suite tests I-Lang compression across 30 representative tasks in 6 categories:

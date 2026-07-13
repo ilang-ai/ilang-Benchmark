@@ -1,0 +1,28 @@
+{
+  "claim": "PATCH-1 reference function f_v5 (11-dim vector -> decision mode) is a learnable decision surface",
+  "generated_at": "2026-07-13T03:37:28.158734+00:00",
+  "n_pairs": 24000,
+  "seed": 42,
+  "mode_distribution": {
+    "M2": 210,
+    "M3": 2561,
+    "M4": 3364,
+    "M5": 8469,
+    "M6": 2791,
+    "M7": 777,
+    "M8": 5828
+  },
+  "majority_baseline_acc": 0.3528,
+  "logistic_acc": 0.6313,
+  "gbdt_acc": 0.9653,
+  "gbdt_lift_over_baseline": 0.6125,
+  "official_jcs": 0.9861,
+  "official_l2_pass": "YES",
+  "validator_source": "ilang-ai/ilang-spec :: ilang_judge_validator.py (version-locked copy)",
+  "interpretation": {
+    "isolates": "judgment layer only; vectors are the validator's synthetic samples, not model-extracted",
+    "proves": "f_v5 is a well-formed learnable mapping; a plain GBDT recovers it and passes the JCS gate",
+    "does_not_prove": "that a language model can extract accurate 11-dim vectors from free text",
+    "next": "extraction-layer benchmark once a base model is selected (see two-layer architecture)"
+  }
+}
