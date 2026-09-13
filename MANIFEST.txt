@@ -39,7 +39,6 @@ RESULTS (Auto-generated)
 VALIDATION
 ----------
 ✅ Mock test passed: 60/60 tests in 6 seconds
-✅ Token savings (mock): 70.9%
 ✅ All scripts executable
 ✅ All dependencies documented
 

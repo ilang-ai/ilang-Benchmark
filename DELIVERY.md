@@ -172,12 +172,10 @@ elif assertion.startswith("custom_check:"):
 
 ### Mock Test (Instant)
 - **Duration:** ~6 seconds (60 tests)
-- **Token savings:** ~70% (mock data)
 - **Output:** `results/raw_results_*.csv`, `results/summary_*.json`
 
 ### Real API Test (Single Model)
 - **Duration:** 5-15 minutes (depends on API latency)
-- **Token savings:** 20-50% (expected range)
 - **Output:** Same as mock + semantic similarity scores
 
 ### Multi-Model Test

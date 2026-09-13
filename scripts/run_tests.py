@@ -16,6 +16,15 @@ from dataclasses import dataclass, asdict
 from datetime import datetime
 import re
 
+import tiktoken
+
+_TOKEN_ENCODING = tiktoken.get_encoding("cl100k_base")
+
+
+def count_tokens(text: str) -> int:
+    """Token count with tiktoken cl100k_base. Never an estimate from word counts."""
+    return len(_TOKEN_ENCODING.encode(text or ""))
+
 # Optional dependencies (install if available)
 try:
     from sentence_transformers import SentenceTransformer, util
@@ -112,9 +121,9 @@ class BenchmarkRunner:
         return {
             "generated_text": output,
             "usage": {
-                "prompt_tokens": len(prompt.split()),
-                "completion_tokens": len(output.split()),
-                "total_tokens": len(prompt.split()) + len(output.split())
+                "prompt_tokens": count_tokens(prompt),
+                "completion_tokens": count_tokens(output),
+                "total_tokens": count_tokens(prompt) + count_tokens(output)
             }
         }
     
@@ -143,9 +152,9 @@ class BenchmarkRunner:
                     }
                 }
             else:
-                # Estimate tokens if not provided
-                prompt_tokens = len(prompt.split())
-                completion_tokens = len(response.split())
+                # Count tokens with tiktoken cl100k_base when the API returns no usage
+                prompt_tokens = count_tokens(prompt)
+                completion_tokens = count_tokens(response)
                 return {
                     "generated_text": response,
                     "usage": {
