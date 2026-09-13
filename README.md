@@ -1,10 +1,10 @@
 # I-Lang Compression Benchmark
 
-Comprehensive testing framework for evaluating I-Lang prompt compression against baseline natural language prompts.
+Comprehensive testing framework for evaluating I-Lang prompt compression against baseline natural language prompts. Protocol: [ilang.ai](https://ilang.ai) · Specification: [ilang.ai/spec/](https://ilang.ai/spec/)
 
 ## Sub-benchmarks
 
-- **[judgment/](judgment/)** — I-Lang v5.0 judgment-layer learnability. Tests whether the PATCH-1 reference mapping f_v5 (11-dim vector to decision mode) is a learnable decision surface. Result: a plain GBDT recovers it at 0.965 vs 0.353 baseline, official JCS 0.986, L2 PASS. Isolates the judgment layer from the extraction layer by design.
+- **[judgment/](judgment/)** — I-Lang v5.0 judgment-layer learnability. Tests whether the PATCH-1 reference mapping f_v5 (11-dim vector to decision mode) is a learnable decision surface. Result: a plain GBDT recovers it at 0.965 vs 0.353 baseline, official JCS 0.986, JCS L2 gate PASS. Isolates the judgment layer from the extraction layer by design.
 
 ## Overview
 
@@ -83,8 +83,7 @@ Each test case in `test_cases.jsonl` contains:
   "baseline_prompt": "Read the following news article and provide...",
   "ilang_prompt": "[READ:@INPUT]=>[SUM|fields=summary,impact,next_steps|format=json]=>[OUT]",
   "expected_schema": {"type": "object", "required": ["summary", "impact", "next_steps"]},
-  "assertions": ["field_exists:summary", "semantic_similarity:summary>=0.75"],
-  "expected_token_savings": 0.35
+  "assertions": ["field_exists:summary", "semantic_similarity:summary>=0.75"]
 }
 ```
 

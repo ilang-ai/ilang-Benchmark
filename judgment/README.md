@@ -21,7 +21,7 @@ end to end, with every number reproducible from a single command.
 | **HistGradientBoosting (recoverability)** | **0.965** |
 | lift over baseline | **+0.613** |
 | **official JCS conformance** | **0.986** |
-| **official L2 gate** | **PASS** |
+| **official JCS L2 gate** | **PASS** |
 
 Seed 42. Reproduce: `python3 learnability.py --n 24000 --seed 42`.
 

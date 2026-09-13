@@ -93,7 +93,6 @@ python3 scripts/generate_report.py \
 - **I-Lang prompt:** Compressed syntax
 - **Expected schema:** JSON schema for validation
 - **Assertions:** Field existence, format, semantic similarity
-- **Expected token savings:** Target compression rate
 
 ---
 
@@ -131,8 +130,7 @@ Edit `test_cases.jsonl`:
   "baseline_prompt": "Verbose natural language prompt...",
   "ilang_prompt": "[READ:@INPUT]=>[PROCESS]=>[OUT]",
   "expected_schema": {"type": "object", "required": ["field1"]},
-  "assertions": ["field_exists:field1", "semantic_similarity:field1>=0.75"],
-  "expected_token_savings": 0.30
+  "assertions": ["field_exists:field1", "semantic_similarity:field1>=0.75"]
 }
 ```
 
