@@ -1,5 +1,7 @@
 # I-Lang Compression Benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22865111.svg)](https://doi.org/10.5281/zenodo.22865111)
+
 Comprehensive testing framework for evaluating I-Lang prompt compression against baseline natural language prompts. Protocol: [ilang.ai](https://ilang.ai) · Specification: [ilang.ai/spec/](https://ilang.ai/spec/)
 
 ## Sub-benchmarks
@@ -196,6 +198,10 @@ time.sleep(1)  # Add after each API call
 ```bash
 pip install sentence-transformers huggingface_hub pandas numpy scipy
 ```
+
+## Citation
+
+[CITATION.cff](CITATION.cff); Zenodo archives each release. Concept DOI [10.5281/zenodo.22865111](https://doi.org/10.5281/zenodo.22865111) (all versions).
 
 ## License
 
