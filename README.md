@@ -1,16 +1,16 @@
-# I-Lang Compression Benchmark
+# iLang Compression Benchmark
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22865111.svg)](https://doi.org/10.5281/zenodo.22865111)
 
-Comprehensive testing framework for evaluating I-Lang prompt compression against baseline natural language prompts. Protocol: [ilang.ai](https://ilang.ai) · Specification: [ilang.ai/spec/](https://ilang.ai/spec/)
+Comprehensive testing framework for evaluating iLang prompt compression against baseline natural language prompts. Protocol: [ilang.ai](https://ilang.ai) · Specification: [ilang.ai/spec/](https://ilang.ai/spec/)
 
 ## Sub-benchmarks
 
-- **[judgment/](judgment/)** — I-Lang v5.0 judgment-layer learnability. Tests whether the PATCH-1 reference mapping f_v5 (11-dim vector to decision mode) is a learnable decision surface. Result: a plain GBDT recovers it at 0.965 vs 0.353 baseline, official JCS 0.986, JCS L2 gate PASS. Isolates the judgment layer from the extraction layer by design.
+- **[judgment/](judgment/)** — iLang v5.0 judgment-layer learnability. Tests whether the PATCH-1 reference mapping f_v5 (11-dim vector to decision mode) is a learnable decision surface. Result: a plain GBDT recovers it at 0.965 vs 0.353 baseline, official JCS 0.986, JCS L2 gate PASS. Isolates the judgment layer from the extraction layer by design.
 
 ## Overview
 
-This benchmark suite tests I-Lang compression across 30 representative tasks in 6 categories:
+This benchmark suite tests iLang compression across 30 representative tasks in 6 categories:
 - **A. Text Summarization** (5 tasks)
 - **B. Table Transformations** (5 tasks)
 - **C. Code Generation** (5 tasks)
@@ -58,7 +58,7 @@ python scripts/generate_report.py --results results/raw_results_*.csv --output r
 
 ```
 ilang-benchmark/
-├── test_cases.jsonl          # 30 test cases (baseline + I-Lang prompts)
+├── test_cases.jsonl          # 30 test cases (baseline + iLang prompts)
 ├── data/                      # Test input files (generated on first run)
 ├── scripts/
 │   ├── run_tests.py          # Main test runner
@@ -95,11 +95,11 @@ Each test case in `test_cases.jsonl` contains:
 - **Input tokens:** Prompt length
 - **Output tokens:** Response length
 - **Total tokens:** Input + Output
-- **Savings rate:** (Baseline - I-Lang) / Baseline
+- **Savings rate:** (Baseline - iLang) / Baseline
 
 ### Quality Metrics
 - **Structural consistency:** Field-level assertion pass rate
-- **Semantic similarity:** Cosine similarity of embeddings (baseline vs I-Lang outputs)
+- **Semantic similarity:** Cosine similarity of embeddings (baseline vs iLang outputs)
 - **Parse error rate:** Percentage of malformed outputs
 
 ### Performance
@@ -153,7 +153,7 @@ Edit `scripts/run_tests.py` and add to `_run_assertions()` method.
 ### GitHub Actions Example
 
 ```yaml
-name: I-Lang Benchmark
+name: iLang Benchmark
 
 on:
   push:

@@ -1,4 +1,4 @@
-# I-Lang v5.0 Judgment Layer — Learnability Benchmark
+# iLang v5.0 Judgment Layer — Learnability Benchmark
 
 A reproducible test of one specific scientific claim from **SPEC-v5.0-PRE + PATCH-1**:
 

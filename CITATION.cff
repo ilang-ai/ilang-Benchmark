@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use ilang-Benchmark, please cite it as below."
-title: "I-Lang Benchmark: a reproducible test suite for I-Lang prompts"
+title: "iLang Benchmark: a reproducible test suite for iLang prompts"
 abstract: >-
-  A benchmark suite that runs I-Lang prompts and natural-language baselines
+  A benchmark suite that runs iLang prompts and natural-language baselines
   over the same 30 tasks in six categories: text summarisation, table
   transformation, code generation, data extraction, multi-turn workflows and
   complex pipelines. It ships the test cases, the runner scripts, the
@@ -23,7 +23,7 @@ version: "1.0.0"
 date-released: "2026-09-21"
 keywords:
   - benchmark
-  - I-Lang
+  - iLang
   - prompt evaluation
   - reproducibility
   - judgment layer
